@@ -23,7 +23,6 @@ public class Alta_Barrio extends AppCompatActivity implements View.OnClickListen
     EditText editText_Alta_Barrio;
     Button btn_Cargar_Barrio;
     Button btn_Cancelar;
-    SectorDao MySectorDao;
     BarrioDao MyBarrioDao;
 
 
