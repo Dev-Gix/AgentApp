@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgentApp">
-        <activity android:name=".activity.Alta_ObraSocial"></activity>
+        <activity android:name=".activity.Alta_Persona"></activity>
+        <activity android:name=".activity.Alta_ObraSocial" />
         <activity android:name=".activity.Alta_Barrio" />
         <activity android:name=".activity.Alta_Principal" />
         <activity android:name=".activity.Alta_Sector" />
         <activity android:name=".activity.Principal_ADM" />
         <activity android:name=".activity.Registrarse" />
-
         <activity android:name=".activity.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
