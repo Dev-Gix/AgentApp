@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="160dp"
+            android:shadowColor="@color/black"
+            android:text="SECTORES"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_Cargar_Sector"
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Cargar"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_Alta_Sector" />
+
+        <Button
+            android:id="@+id/btn_Cancelar"
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_Alta_Sector" />
+
+        <EditText
+            android:id="@+id/editText_Alta_Sector"
+            android:layout_width="327dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="100dp"
+            android:autofillHints=""
+
+            android:ems="10"
+            android:hint="Ingresa el Nombre del Sector"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

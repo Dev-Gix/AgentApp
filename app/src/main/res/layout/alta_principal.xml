@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_Alta_Barrio"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Barrio"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Sector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Alta_Sector"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="38dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Sector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_Barrio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Alta_Patologia"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Patologias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_ObraSocial"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Sector"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Alta_Medicamentos"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Medicamentos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_Vacunas"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Patologia"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Alta_Vacunas"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Vacunas"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Medicamentos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_ObraSocial"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Alta_ObraSocial"
+            android:layout_width="157dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Obra Social"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Patologia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Barrio"
+            app:strokeColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
