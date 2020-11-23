@@ -32,13 +32,13 @@
             android:layout_marginEnd="41dp"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:text="Cargar"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar_Persona"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_Alta_Barrio" />
 
         <Button
-            android:id="@+id/btn_Cancelar"
+            android:id="@+id/btn_Cancelar_Persona"
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:layout_marginTop="72dp"

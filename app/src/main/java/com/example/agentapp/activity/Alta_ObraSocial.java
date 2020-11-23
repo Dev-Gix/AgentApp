@@ -11,7 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.agentapp.R;
-import com.example.agentapp.entidades.barrio.Barrio;
 import com.example.agentapp.entidades.obrasocial.ObraSocial;
 import com.example.agentapp.entidades.obrasocial.ObraSocialDao;
 import com.example.agentapp.entornodedatos.EntornoDeDatos;
@@ -30,7 +29,7 @@ public class Alta_ObraSocial extends AppCompatActivity implements View.OnClickLi
 
         editText_Alta_ObraSocial = findViewById(R.id.editText_Alta_ObraSocial);
         btn_Cargar_ObraSocial= findViewById(R.id.btn_Cargar_ObraSocial);
-        btn_Cancelar = findViewById(R.id.btn_Cancelar);
+        btn_Cancelar = findViewById(R.id.btn_Cancelar_Persona);
 
         btn_Cargar_ObraSocial.setOnClickListener(this);
         btn_Cancelar.setOnClickListener(this);
@@ -61,7 +60,7 @@ public class Alta_ObraSocial extends AppCompatActivity implements View.OnClickLi
                 }
 
                 break;
-            case R.id.btn_Cancelar:
+            case R.id.btn_Cancelar_Persona:
                 Intent Alta_Principal = new Intent(this, Alta_Principal.class);
                 startActivity(Alta_Principal);
                 finish();

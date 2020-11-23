@@ -32,7 +32,7 @@ public class Alta_Sector extends AppCompatActivity implements View.OnClickListen
 
         editText_Alta_Sector = findViewById(R.id.editText_Alta_Sector);
         btn_Cargar_Sector = findViewById(R.id.btn_Cargar_Sector);
-        btn_Cancelar = findViewById(R.id.btn_Cancelar);
+        btn_Cancelar = findViewById(R.id.btn_Cancelar_Persona);
 
         btn_Cargar_Sector.setOnClickListener(this);
         btn_Cancelar.setOnClickListener(this);
@@ -69,7 +69,7 @@ public class Alta_Sector extends AppCompatActivity implements View.OnClickListen
                 }
 
                 break;
-            case R.id.btn_Cancelar:
+            case R.id.btn_Cancelar_Persona:
                 Intent Alta_Principal = new Intent(this, Alta_Principal.class);
                 startActivity(Alta_Principal);
                 finish();

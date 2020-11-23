@@ -46,7 +46,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <Button
-            android:id="@+id/btn_Cancelar"
+            android:id="@+id/btn_Cancelar_Persona"
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:layout_marginStart="33dp"
@@ -73,7 +73,7 @@
             android:backgroundTint="@android:color/holo_blue_dark"
             android:text="Cargar"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar_Persona"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_Alta_ObraSocial" />
 

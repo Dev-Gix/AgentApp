@@ -57,7 +57,7 @@ public class EmpadronadorDao extends DaoGenerico implements MetodosComunes<Empad
     public Empadronador LoadRecord(Long PK) {
         Empadronador EmpadronadorAux = new Empadronador();
         Cursor MyCursor = null;
-        MyCursor = getConnection().rawQuery("Select * from Empadronador where Empadronador_Pk =" + PK, null);
+        MyCursor = getConnection().rawQuery("Select * from Empadronador where idEmpadronadorPk =" + PK, null);
 
         while (MyCursor.moveToNext()) {
             String Nombre = MyCursor.getString(1);
