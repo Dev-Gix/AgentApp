@@ -45,7 +45,7 @@ public class Registrarse extends AppCompatActivity implements View.OnClickListen
         EditText_Usuario = findViewById(R.id.EditText_Usuario);
         EditText_Password = findViewById(R.id.EditText_Password);
         btn_Registrarse = findViewById(R.id.btn_Registrarse);
-        btn_Cancelar = findViewById(R.id.btn_Cancelar);
+        btn_Cancelar = findViewById(R.id.btn_Cancelar_Persona);
         spinner_SectorEmp = findViewById(R.id.spinner_SectorEmp);
 
         btn_Registrarse.setOnClickListener(this);
@@ -109,7 +109,7 @@ public class Registrarse extends AppCompatActivity implements View.OnClickListen
 
                 break;
 
-            case R.id.btn_Cancelar:
+            case R.id.btn_Cancelar_Persona:
                 Intent login2 = new Intent(this, Login.class);
                 startActivity(login2);
                 finish();

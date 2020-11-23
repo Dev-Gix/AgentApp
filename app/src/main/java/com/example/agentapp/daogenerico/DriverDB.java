@@ -20,6 +20,8 @@ public class DriverDB extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("create table Empadronador(idEmpadronadorPk integer primary key autoincrement,Nombre text not null,Apellido text not null,DNI text not null,Usuario text not null,Clave text not null,SectorClaveFR integer )");
         sqLiteDatabase.execSQL("create table Sector(SectorPk integer primary key autoincrement,NombreSector text not null)");
         sqLiteDatabase.execSQL("create table Barrio(BarrioPK integer primary key autoincrement,NombreBarrio text not null)");
+        sqLiteDatabase.execSQL("create table ObraSocial(ObraSocial_PK integer primary key autoincrement,NombreObraSocial text not null)");
+        sqLiteDatabase.execSQL("create table HistoriaClinica(HistoriaClinicaPk integer primary key autoincrement,NumeroDeHistoriaClinica text not null,ObraSocial_ClaveFR integer)");
     }
 
     @Override

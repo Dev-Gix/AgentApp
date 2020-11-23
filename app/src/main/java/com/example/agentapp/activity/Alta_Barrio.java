@@ -16,7 +16,6 @@ import com.example.agentapp.entornodedatos.EntornoDeDatos;
 
 import com.example.agentapp.entidades.barrio.Barrio;
 import com.example.agentapp.entidades.barrio.BarrioDao;
-import com.example.agentapp.entidades.sector.SectorDao;
 
 public class Alta_Barrio extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,7 +32,7 @@ public class Alta_Barrio extends AppCompatActivity implements View.OnClickListen
 
         editText_Alta_Barrio = findViewById(R.id.editText_Alta_Barrio);
         btn_Cargar_Barrio = findViewById(R.id.btn_Cargar_Barrio);
-        btn_Cancelar = findViewById(R.id.btn_Cancelar);
+        btn_Cancelar = findViewById(R.id.btn_Cancelar_Persona);
 
         btn_Cargar_Barrio.setOnClickListener(this);
         btn_Cancelar.setOnClickListener(this);
@@ -68,7 +67,7 @@ public class Alta_Barrio extends AppCompatActivity implements View.OnClickListen
 
 
                 break;
-            case R.id.btn_Cancelar:
+            case R.id.btn_Cancelar_Persona:
                 Intent Alta_Principal = new Intent(this, Alta_Principal.class);
                 startActivity(Alta_Principal);
                 finish();
