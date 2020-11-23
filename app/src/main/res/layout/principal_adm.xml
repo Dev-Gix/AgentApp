@@ -4,68 +4,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center">
+        android:layout_height="match_parent" >
 
-        <Button
-            android:id="@+id/btn_Alta"
-            android:layout_width="157dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="148dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="Alta"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Consultar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="@color/white" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center">
 
-        <Button
-            android:id="@+id/btn_Modificar"
-            android:layout_width="157dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="48dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="Modificar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn_Eliminar"
-            app:layout_constraintTop_toBottomOf="@+id/btn_Consultar"
-            app:strokeColor="@color/white" />
+            <Button
+                android:id="@+id/btn_Alta"
+                android:layout_width="157dp"
+                android:layout_height="131dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Alta"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Consultar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/white" />
 
-        <Button
-            android:id="@+id/btn_Consultar"
-            android:layout_width="157dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="148dp"
-            android:layout_marginEnd="48dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="Consultar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/btn_Alta"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="@color/white" />
+            <Button
+                android:id="@+id/btn_Modificar"
+                android:layout_width="157dp"
+                android:layout_height="131dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="48dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Modificar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_Eliminar"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Consultar"
+                app:strokeColor="@color/white" />
 
-        <Button
-            android:id="@+id/btn_Eliminar"
-            android:layout_width="157dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="Eliminar"
-            app:icon="@android:drawable/ic_delete"
-            app:layout_constraintEnd_toStartOf="@+id/btn_Modificar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_Alta"
-            app:strokeColor="@color/white" />
+            <Button
+                android:id="@+id/btn_Consultar"
+                android:layout_width="157dp"
+                android:layout_height="131dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="48dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Consultar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btn_Alta"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/white" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btn_Eliminar"
+                android:layout_width="157dp"
+                android:layout_height="131dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Eliminar"
+                app:icon="@android:drawable/ic_delete"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Modificar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Alta"
+                app:strokeColor="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </LinearLayout>
