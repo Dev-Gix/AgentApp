@@ -38,13 +38,14 @@
                     android:layout_width="175dp"
                     android:layout_height="41dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginEnd="20dp"
                     android:ems="10"
                     android:hint="Ingresa la Fecha "
                     android:inputType="date"
-                    app:layout_constraintEnd_toStartOf="@+id/Spinner_BarrioPersona"
+                    app:layout_constraintEnd_toStartOf="@+id/EditTextNumeroCasaPersona"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="352dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/Spinner_NacionalidadPersona" />
 
                 <TextView
                     android:id="@+id/textView32"
@@ -83,11 +84,16 @@
                     android:id="@+id/textView35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="144dp"
+                    android:layout_marginStart="183dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="187dp"
                     android:text="Barrio:"
                     android:textColor="@android:color/holo_blue_dark"
                     app:layout_constraintBottom_toTopOf="@+id/Spinner_BarrioPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroManzanaPersona" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -117,10 +123,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
+                    android:text="Direccion:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextDireccion_Casa_Persona"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="52dp"
                     android:text="Numero De Manzana:"
                     android:textColor="@android:color/holo_blue_dark"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextNumeroManzanaPersona"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
                     android:id="@+id/textView34"
@@ -134,7 +150,7 @@
                     app:layout_constraintBottom_toTopOf="@+id/EditTextObservacionPersona"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroManzanaPersona" />
+                    app:layout_constraintTop_toBottomOf="@+id/Spinner_BarrioPersona" />
 
                 <TextView
                     android:id="@+id/textView28"
@@ -160,14 +176,12 @@
 
                 <Spinner
                     android:id="@+id/Spinner_BarrioPersona"
-                    android:layout_width="175dp"
+                    android:layout_width="match_parent"
                     android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/EditTextFechaNacimientoPersona"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextOcupacionPersona" />
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
                 <EditText
                     android:id="@+id/EditTextNombrePersona"
@@ -206,7 +220,21 @@
                     android:ems="10"
                     android:hint="Ingresa Nº Manzana"
                     android:inputType="textPersonName"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextNumeroCasaPersona"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextDireccion_Casa_Persona"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroCasaPersona" />
+
+                <EditText
+                    android:id="@+id/editTextDireccion_Casa_Persona"
+                    android:layout_width="175dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Ingresa la Direccion"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/EditTextNumeroManzanaPersona"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/EditTextFechaNacimientoPersona" />
 
@@ -269,8 +297,8 @@
                     android:hint="Ingresa Nº Casa"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/EditTextNumeroManzanaPersona"
-                    app:layout_constraintTop_toBottomOf="@+id/Spinner_BarrioPersona" />
+                    app:layout_constraintStart_toEndOf="@+id/EditTextFechaNacimientoPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextOcupacionPersona" />
 
                 <EditText
                     android:id="@+id/EditTextOcupacionPersona"

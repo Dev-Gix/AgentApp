@@ -73,7 +73,7 @@ public class Alta_Persona extends AppCompatActivity implements View.OnClickListe
                 MyPersona.setNacionalidad(Spinner_NacionalidadPersona.getSelectedItem().toString());
                 MyPersona.setOcupacion(EditTextOcupacionPersona.getText().toString());
 
-              //  MyPersona.setHistoriaClinica_ClaveFR();
+               // MyPersona.setHistoriaClinica_ClaveFR();
                // MyPersona.setEmpadronador_ClaveFR(RecibirDatos());
                 //MyPersona.setBarrio_ClaveFR();
 
