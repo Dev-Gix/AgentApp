@@ -66,9 +66,10 @@ public class BarrioDao extends DaoGenerico implements MetodosComunes<Barrio, Lon
 
         while (myCursor.moveToNext()) {
 
+            Long BarrioPK = myCursor.getLong(0);
             String NombreBarrio = myCursor.getString(1);
 
-
+            Auxiliar.setBarrioPK(BarrioPK);
             Auxiliar.setNombreBarrio(NombreBarrio);
 
 

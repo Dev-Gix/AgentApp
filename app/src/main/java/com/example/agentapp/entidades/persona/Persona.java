@@ -3,12 +3,12 @@ package com.example.agentapp.entidades.persona;
 public class Persona {
     Long PersonaPK;
     String NombrePersona,ApellidoPersona,FNACPersona,DNI,Observacion,EstadoCivil,Nacionalidad,Ocupacion;
-    Long HistoriaClinica_ClaveFR,Empadronador_ClaveFR,Barrio_ClaveFR;
+    Long HistoriaClinica_ClaveFR,Empadronador_ClaveFR,Casa_ClaveFR;
 
     public Persona() {
     }
 
-    public Persona(Long personaPK, String nombrePersona, String apellidoPersona, String FNACPersona, String DNI, String observacion, String estadoCivil, String nacionalidad, String ocupacion, Long historiaClinica_ClaveFR, Long empadronador_ClaveFR, Long barrio_ClaveFR) {
+    public Persona(Long personaPK, String nombrePersona, String apellidoPersona, String FNACPersona, String DNI, String observacion, String estadoCivil, String nacionalidad, String ocupacion, Long historiaClinica_ClaveFR, Long empadronador_ClaveFR, Long casa_ClaveFR) {
         PersonaPK = personaPK;
         NombrePersona = nombrePersona;
         ApellidoPersona = apellidoPersona;
@@ -20,7 +20,7 @@ public class Persona {
         Ocupacion = ocupacion;
         HistoriaClinica_ClaveFR = historiaClinica_ClaveFR;
         Empadronador_ClaveFR = empadronador_ClaveFR;
-        Barrio_ClaveFR = barrio_ClaveFR;
+        Casa_ClaveFR = casa_ClaveFR;
     }
 
     public boolean isnull() {
@@ -29,7 +29,6 @@ public class Persona {
         }
         return false;
     }
-
 
 
     public Long getPersonaPK() {
@@ -120,11 +119,11 @@ public class Persona {
         Empadronador_ClaveFR = empadronador_ClaveFR;
     }
 
-    public Long getBarrio_ClaveFR() {
-        return Barrio_ClaveFR;
+    public Long getCasa_ClaveFR() {
+        return Casa_ClaveFR;
     }
 
-    public void setBarrio_ClaveFR(Long barrio_ClaveFR) {
-        Barrio_ClaveFR = barrio_ClaveFR;
+    public void setCasa_ClaveFR(Long casa_ClaveFR) {
+        Casa_ClaveFR = casa_ClaveFR;
     }
 }

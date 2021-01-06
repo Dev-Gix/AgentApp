@@ -13,338 +13,389 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONA"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Spinner
+                    android:id="@+id/Spinner_EstadoCivilPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Fecha De Nacimiento:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextDNIPersona"
+                    tools:ignore="MissingConstraints" />
+
+                <DatePicker
+                    android:id="@+id/DatePicker_FechaNacimientoPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:spinnersShown="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33"
+                    tools:ignore="MissingConstraints" />
 
                 <EditText
                     android:id="@+id/EditTextApellidoPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
                     android:ems="10"
                     android:hint="Ingresa el Apellido"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/EditTextNombrePersona"
-                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-                <EditText
-                    android:id="@+id/EditTextFechaNacimientoPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa la Fecha "
-                    android:inputType="date"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextNumeroCasaPersona"
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Obra Social:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Spinner_NacionalidadPersona" />
 
                 <TextView
-                    android:id="@+id/textView32"
-                    android:layout_width="74dp"
-                    android:layout_height="19dp"
-                    android:layout_marginEnd="108dp"
-                    android:text="Ocupacion:"
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Estado Civil:"
                     android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextOcupacionPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextApellidoPersona" />
 
                 <EditText
-                    android:id="@+id/EditTextObservacionPersona"
-                    android:layout_width="238dp"
-                    android:layout_height="166dp"
+                    android:id="@+id/EditTextNombrePersona"
+                    android:layout_width="0dp"
+                    android:layout_height="62dp"
                     android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Ingresa Una Observacion si es necesaria"
-                    android:inputType="textMultiLine"
+                    android:hint="Ingresa el Nombre"
+                    android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="Nacionalidad:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/Spinner_NacionalidadPersona"
-                    app:layout_constraintStart_toStartOf="parent" />
+                <Spinner
+                    android:id="@+id/Spinner_ObraSocialPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
-                <TextView
-                    android:id="@+id/textView35"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="183dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="187dp"
-                    android:text="Barrio:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/Spinner_BarrioPersona"
+                <EditText
+                    android:id="@+id/EditTextDNIPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:hint="Ingresa el DNI"
+                    android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroManzanaPersona" />
+                    app:layout_constraintTop_toBottomOf="@+id/s" />
 
                 <TextView
-                    android:id="@+id/textView37"
-                    android:layout_width="112dp"
-                    android:layout_height="18dp"
-                    android:layout_marginEnd="72dp"
-                    android:text="Numero de Casa:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextNumeroCasaPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <Button
-                    android:id="@+id/btn_Cargar_Persona"
-                    android:layout_width="143dp"
-                    android:layout_height="63dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:backgroundTint="@android:color/holo_blue_dark"
-                    android:text="Cargar"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar_Persona"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextObservacionPersona" />
-
-                <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/s"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="Direccion:"
+                    android:layout_marginTop="20dp"
+                    android:text="DNI:"
                     android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextDireccion_Casa_Persona"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Spinner_EstadoCivilPersona" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Ocupacion:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DatePicker_FechaNacimientoPersona"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Apellido:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextNombrePersona" />
+
+                <EditText
+                    android:id="@+id/EditTextOcupacionPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:ems="10"
+                    android:hint="Ingresa la Ocupacion"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Nombre:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/EditTextNombrePersona"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/Spinner_NacionalidadPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nacionalidad:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextOcupacionPersona" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ubicacion"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/EditTextNumeroCasaPersona"
+                    android:layout_width="181dp"
+                    android:layout_height="62dp"
+                    android:ems="10"
+                    android:hint="Ingresa Nº Casa"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <EditText
+                    android:id="@+id/EditTextNumeroManzanaPersona"
+                    android:layout_width="181dp"
+                    android:layout_height="62dp"
+                    android:ems="10"
+                    android:hint="Ingresa Nº Manzana"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.695"
+                    app:layout_constraintStart_toEndOf="@+id/EditTextNumeroCasaPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="52dp"
-                    android:text="Numero De Manzana:"
+                    android:layout_marginTop="20dp"
+                    android:text="Direccion"
                     android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextNumeroManzanaPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextDireccion_Casa_Persona"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="@+id/editTextDireccion_Casa_Persona"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroCasaPersona" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Barrio:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/spinner_BarrioPersona"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="@+id/spinner_BarrioPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroManzanaPersona" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Numero de Manzana:"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/EditTextNumeroManzanaPersona"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="@+id/EditTextNumeroManzanaPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <EditText
+                    android:id="@+id/editTextDireccion_Casa_Persona"
+                    android:layout_width="181dp"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Ingresa la Direccion"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Spinner
+                    android:id="@+id/spinner_BarrioPersona"
+                    android:layout_width="181dp"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.682"
+                    app:layout_constraintStart_toEndOf="@+id/editTextDireccion_Casa_Persona"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nº de Casa"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/EditTextNumeroCasaPersona"
+                    app:layout_constraintStart_toStartOf="@+id/EditTextNumeroCasaPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/EditTextObservacionPersona"
+                    android:layout_width="315dp"
+                    android:layout_height="106dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Ingresa Una Observacion si es necesaria"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
                 <TextView
                     android:id="@+id/textView34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="164dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="165dp"
+                    android:layout_marginTop="20dp"
                     android:text="Observacion:"
                     android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextObservacionPersona"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Spinner_BarrioPersona" />
-
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="128dp"
-                    android:layout_marginBottom="1dp"
-                    android:text="Apellido:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextApellidoPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginBottom="2dp"
-                    android:text="Estado Civil:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/Spinner_EstadoCivilPersona"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <Spinner
-                    android:id="@+id/Spinner_BarrioPersona"
-                    android:layout_width="match_parent"
-                    android:layout_height="41dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
-
-                <EditText
-                    android:id="@+id/EditTextNombrePersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa el Nombre"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextApellidoPersona"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                    app:layout_constraintEnd_toEndOf="@+id/EditTextObservacionPersona"
+                    app:layout_constraintStart_toStartOf="@+id/EditTextObservacionPersona"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/btn_Cancelar_Persona"
                     android:layout_width="143dp"
                     android:layout_height="63dp"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="81dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
                     android:backgroundTint="@color/design_default_color_error"
                     android:text="Cancelar"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/EditTextObservacionPersona"
                     app:layout_constraintStart_toEndOf="@+id/btn_Cargar_Persona"
                     app:layout_constraintTop_toBottomOf="@+id/EditTextObservacionPersona" />
 
-                <EditText
-                    android:id="@+id/EditTextNumeroManzanaPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa Nº Manzana"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/editTextDireccion_Casa_Persona"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextNumeroCasaPersona" />
-
-                <EditText
-                    android:id="@+id/editTextDireccion_Casa_Persona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa la Direccion"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextNumeroManzanaPersona"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextFechaNacimientoPersona" />
-
-                <TextView
-                    android:id="@+id/s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="156dp"
-                    android:layout_marginBottom="1dp"
-                    android:text="DNI:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextDNIPersona"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="174dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="175dp"
-                    android:text="PERSONA"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="Nombre:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextNombrePersona"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <EditText
-                    android:id="@+id/EditTextDNIPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa el DNI"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/Spinner_EstadoCivilPersona"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextApellidoPersona" />
-
-                <EditText
-                    android:id="@+id/EditTextNumeroCasaPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa Nº Casa"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/EditTextFechaNacimientoPersona"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextOcupacionPersona" />
-
-                <EditText
-                    android:id="@+id/EditTextOcupacionPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    android:ems="10"
-                    android:hint="Ingresa la Ocupacion"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/Spinner_NacionalidadPersona"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextDNIPersona" />
-
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="Fecha De Nacimiento:"
-                    android:textColor="@android:color/holo_blue_dark"
-                    app:layout_constraintBottom_toTopOf="@+id/EditTextFechaNacimientoPersona"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <Spinner
-                    android:id="@+id/Spinner_EstadoCivilPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextDNIPersona"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextNombrePersona" />
-
-                <Spinner
-                    android:id="@+id/Spinner_NacionalidadPersona"
-                    android:layout_width="175dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="20dp"
-                    app:layout_constraintEnd_toStartOf="@+id/EditTextOcupacionPersona"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Spinner_EstadoCivilPersona" />
+                <Button
+                    android:id="@+id/btn_Cargar_Persona"
+                    android:layout_width="143dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:text="Cargar"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar_Persona"
+                    app:layout_constraintStart_toStartOf="@+id/EditTextObservacionPersona"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextObservacionPersona" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

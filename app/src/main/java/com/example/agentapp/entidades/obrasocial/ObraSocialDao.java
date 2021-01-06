@@ -28,7 +28,7 @@ public class ObraSocialDao extends DaoGenerico implements MetodosComunes<ObraSoc
 
         if (PK > 0) {
             ObjAuxiliar = ObjetoParaAgregar;
-            ObjAuxiliar.setObraSocialPK(PK);
+            ObjAuxiliar.setObraSocial_PK(PK);
             return (ObjAuxiliar);
         }
 
@@ -63,10 +63,11 @@ public class ObraSocialDao extends DaoGenerico implements MetodosComunes<ObraSoc
         myCursor = getConnection().rawQuery(ComandoSql, null);
 
         while (myCursor.moveToNext()) {
-
+            Long ObraSocial_PK = myCursor.getLong(0);
             String NombreObraSocial = myCursor.getString(1);
 
 
+            Auxiliar.setObraSocial_PK(ObraSocial_PK);
             Auxiliar.setNombreObraSocial(NombreObraSocial);
 
 

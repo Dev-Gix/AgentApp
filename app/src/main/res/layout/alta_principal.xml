@@ -5,99 +5,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_Alta_Sector"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Sector"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Alta_Patologia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_Barrio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_Barrio"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="49dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Barrio"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Sector"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/btn_Alta_Medicamentos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Medicamentos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_Vacunas"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Patologia"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_Sector"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="38dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Sector"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_Alta_Barrio"
-                app:layout_constraintTop_toTopOf="parent"
-                app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/btn_Alta_Vacunas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Vacunas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Medicamentos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_ObraSocial"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_Patologia"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Patologias"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_Alta_ObraSocial"
-                app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Sector"
-                app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/btn_Alta_Barrio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Barrio"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Alta_ObraSocial"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Sector"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_Medicamentos"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Medicamentos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_Alta_Vacunas"
-                app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Patologia"
-                app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/btn_Alta_ObraSocial"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Obra Social"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Alta_Vacunas"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Patologia"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Barrio"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_Vacunas"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="49dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="18dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Vacunas"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Medicamentos"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_Alta_ObraSocial"
-                app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/btn_Alta_Patologia"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Patologias"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Alta_Medicamentos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Alta_ObraSocial"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Sector"
+            app:strokeColor="@color/white" />
 
-            <Button
-                android:id="@+id/btn_Alta_ObraSocial"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_marginStart="49dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="18dp"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:text="Obra Social"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Alta_Patologia"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_Alta_Barrio"
-                app:strokeColor="@color/white" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

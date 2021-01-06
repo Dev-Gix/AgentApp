@@ -22,4 +22,35 @@
     <string name="cancelar">Cancelar</string>
     <string name="apellido">Apellido:</string>
     <string name="dni">DNI:</string>
+
+    <string-array name="EstadoCivil">
+        <item>Seleccione</item>
+        <item>Casado</item>
+        <item>Soltero</item>
+        <item>Viudo</item>
+        <item>Divorciado</item>
+        <item>Concubinato</item>
+    </string-array>
+
+    <string-array name="Nacionalidad">
+        <item>Seleccione</item>
+        <item>Argentina</item>
+        <item>Boliviano</item>
+        <item>Brasileño</item>
+        <item>Chileno</item>
+        <item>Chino</item>
+        <item>Chino</item>
+        <item>Colombiano</item>
+        <item>Coreano</item>
+        <item>Cubano</item>
+        <item>Español</item>
+        <item>Estadounidense</item>
+        <item>Japonés</item>
+        <item>Mexicano</item>
+        <item>Paraguayo</item>
+        <item>Peruano</item>
+        <item>Uruguayo</item>
+        <item>Venezolano</item>
+
+    </string-array>
 </resources>

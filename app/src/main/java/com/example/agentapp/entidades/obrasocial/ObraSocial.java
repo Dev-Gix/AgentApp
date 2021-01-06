@@ -29,12 +29,12 @@ public class ObraSocial {
                 '}';
     }
 
-    public Long getObraSocialPK() {
+    public Long getObraSocial_PK() {
         return ObraSocial_PK;
     }
 
-    public void setObraSocialPK(Long obraSocialPK) {
-        ObraSocial_PK = obraSocialPK;
+    public void setObraSocial_PK(Long obraSocial_PK) {
+        ObraSocial_PK = obraSocial_PK;
     }
 
     public String getNombreObraSocial() {

@@ -12,23 +12,25 @@
         android:id="@+id/EditText_Usuario"
         android:layout_width="255dp"
         android:layout_height="67dp"
-        android:layout_marginTop="272dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/EditText_Password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/Btn_IniciarSeccion"
         android:layout_width="143dp"
         android:layout_height="63dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="64dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="@string/iniciar_seccion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_Registrarse"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditText_Password"
         app:strokeColor="@color/white" />
@@ -37,12 +39,13 @@
         android:id="@+id/EditText_Password"
         android:layout_width="255dp"
         android:layout_height="67dp"
-        android:layout_marginTop="44dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_IniciarSeccion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditText_Usuario" />
 
@@ -50,13 +53,11 @@
         android:id="@+id/Btn_Registrarse"
         android:layout_width="143dp"
         android:layout_height="63dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="52dp"
         android:backgroundTint="@color/design_default_color_error"
         android:text="@string/registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Btn_IniciarSeccion"
         app:layout_constraintTop_toBottomOf="@+id/EditText_Password" />
 
@@ -64,14 +65,11 @@
         android:id="@+id/imageView"
         android:layout_width="112dp"
         android:layout_height="101dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
         android:src="@drawable/icono_login"
         app:layout_constraintBottom_toTopOf="@+id/EditText_Usuario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

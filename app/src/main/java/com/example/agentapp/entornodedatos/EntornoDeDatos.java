@@ -17,4 +17,6 @@ public class EntornoDeDatos {
     public static List<Barrio> listBarrio = new ArrayList<Barrio>();
     public static List<ObraSocial> listObraSocial = new ArrayList<ObraSocial>();
     public static List<String> listSpinnerSector = new ArrayList<String>();
+    public static List<String> listSpinnerBarrio = new ArrayList<String>();
+    public static List<String> listSpinnerObraSocial = new ArrayList<String>();
 }

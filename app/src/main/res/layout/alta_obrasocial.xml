@@ -14,82 +14,69 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="144dp"
             android:layout_marginTop="64dp"
-            android:layout_marginEnd="160dp"
             android:layout_weight="1"
             android:shadowColor="@color/black"
             android:text="Obras Sociales"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="22dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editText_Alta_ObraSocial"
-            android:layout_width="327dp"
+            android:layout_width="match_parent"
             android:layout_height="73dp"
 
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="42dp"
             android:layout_weight="1"
             android:autofillHints=""
             android:ems="10"
             android:hint="Ingresa  el Nombre de la  Obra Social"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-        <Button
-            android:id="@+id/btn_Cancelar_Persona"
-            android:layout_width="143dp"
-            android:layout_height="63dp"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="348dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/design_default_color_error"
-            android:text="Cancelar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn_Cargar_ObraSocial"
-            app:layout_constraintTop_toBottomOf="@+id/editText_Alta_ObraSocial" />
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <Button
             android:id="@+id/btn_Cargar_ObraSocial"
             android:layout_width="143dp"
             android:layout_height="63dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="33dp"
-            android:layout_marginBottom="352dp"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:text="Cargar"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_Cancelar_Persona"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_Alta_ObraSocial" />
+
+        <Button
+            android:id="@+id/btn_Cancelar_Persona"
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Cargar_ObraSocial"
             app:layout_constraintTop_toBottomOf="@+id/editText_Alta_ObraSocial" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginEnd="238dp"
+            android:layout_marginTop="81dp"
             android:layout_weight="1"
             android:text="Obra Social  a Cargar"
             android:textColor="@android:color/holo_blue_dark"
-            app:layout_constraintBottom_toTopOf="@+id/editText_Alta_ObraSocial"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

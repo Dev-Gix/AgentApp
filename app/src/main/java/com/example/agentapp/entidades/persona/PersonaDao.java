@@ -32,7 +32,7 @@ public class PersonaDao extends DaoGenerico implements MetodosComunes<Persona,Lo
         MyContentValues.put("Ocupacion", ObjetoParaAgregar.getOcupacion());
         MyContentValues.put("HistoriaClinica_ClaveFR", ObjetoParaAgregar.getHistoriaClinica_ClaveFR());
         MyContentValues.put("Empadronador_ClaveFR", ObjetoParaAgregar.getEmpadronador_ClaveFR());
-        MyContentValues.put("Barrio_ClaveFR", ObjetoParaAgregar.getBarrio_ClaveFR());
+        MyContentValues.put("Casa_ClaveFR", ObjetoParaAgregar.getCasa_ClaveFR());
 
         Long PK = getConnection().insertOrThrow("Persona", null, MyContentValues);
 
@@ -84,10 +84,10 @@ public class PersonaDao extends DaoGenerico implements MetodosComunes<Persona,Lo
             String Ocupacion = myCursor.getString(8);
             Long HistoriaClinica_ClaveFR = myCursor.getLong(9);
             Long Empadronador_ClaveFR = myCursor.getLong(10);
-            Long Barrio_ClaveFR = myCursor.getLong(11);
+            Long Casa_ClaveFR = myCursor.getLong(11);
 
 
-            Persona Auxiliar = new Persona(PersonaPK, NombrePersona, ApellidoPersona, FNACPersona, DNI, Observacion, EstadoCivil,Nacionalidad,Ocupacion,HistoriaClinica_ClaveFR,Empadronador_ClaveFR,Barrio_ClaveFR);
+            Persona Auxiliar = new Persona(PersonaPK, NombrePersona, ApellidoPersona, FNACPersona, DNI, Observacion, EstadoCivil,Nacionalidad,Ocupacion,HistoriaClinica_ClaveFR,Empadronador_ClaveFR,Casa_ClaveFR);
 
             List.add(Auxiliar);
         }
