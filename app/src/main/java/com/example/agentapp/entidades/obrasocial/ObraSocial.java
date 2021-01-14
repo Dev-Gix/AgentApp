@@ -23,10 +23,7 @@ public class ObraSocial {
 
     @Override
     public String toString() {
-        return "ObraSocial{" +
-                "ObraSocialPK=" + ObraSocial_PK +
-                ", NombreObraSocial='" + NombreObraSocial + '\'' +
-                '}';
+        return  NombreObraSocial ;
     }
 
     public Long getObraSocial_PK() {

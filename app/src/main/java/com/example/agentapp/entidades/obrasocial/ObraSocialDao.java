@@ -57,7 +57,7 @@ public class ObraSocialDao extends DaoGenerico implements MetodosComunes<ObraSoc
 
     @Override
     public List<ObraSocial> getAll(String ComandoSql) {
-        ObraSocial Auxiliar = new ObraSocial();
+
         List<ObraSocial> List = new ArrayList<ObraSocial>();
         Cursor myCursor = null;
         myCursor = getConnection().rawQuery(ComandoSql, null);
@@ -66,9 +66,9 @@ public class ObraSocialDao extends DaoGenerico implements MetodosComunes<ObraSoc
             Long ObraSocial_PK = myCursor.getLong(0);
             String NombreObraSocial = myCursor.getString(1);
 
-
-            Auxiliar.setObraSocial_PK(ObraSocial_PK);
-            Auxiliar.setNombreObraSocial(NombreObraSocial);
+            ObraSocial Auxiliar = new ObraSocial(ObraSocial_PK,NombreObraSocial);
+            //Auxiliar.setObraSocial_PK(ObraSocial_PK);
+           // Auxiliar.setNombreObraSocial(NombreObraSocial);
 
 
             List.add(Auxiliar);

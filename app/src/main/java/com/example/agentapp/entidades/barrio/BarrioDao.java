@@ -59,7 +59,7 @@ public class BarrioDao extends DaoGenerico implements MetodosComunes<Barrio, Lon
 
     @Override
     public List<Barrio> getAll(String ComandoSql) {
-        Barrio Auxiliar = new Barrio();
+
         List<Barrio> List = new ArrayList<Barrio>();
         Cursor myCursor = null;
         myCursor = getConnection().rawQuery(ComandoSql, null);
@@ -69,9 +69,7 @@ public class BarrioDao extends DaoGenerico implements MetodosComunes<Barrio, Lon
             Long BarrioPK = myCursor.getLong(0);
             String NombreBarrio = myCursor.getString(1);
 
-            Auxiliar.setBarrioPK(BarrioPK);
-            Auxiliar.setNombreBarrio(NombreBarrio);
-
+            Barrio Auxiliar = new Barrio( BarrioPK, NombreBarrio);
 
             List.add(Auxiliar);
         }
