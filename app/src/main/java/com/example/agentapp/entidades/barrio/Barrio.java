@@ -8,7 +8,7 @@ public class Barrio {
     public Barrio() {
     }
 
-    public Barrio(Long barrioPK, String nombreBarrio, Long sectorClaveFR) {
+    public Barrio(Long barrioPK, String nombreBarrio) {
         BarrioPK = barrioPK;
         NombreBarrio = nombreBarrio;
 
